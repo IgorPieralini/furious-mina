@@ -1,0 +1,15 @@
+name: FuriousMina
+version: '1.0-SNAPSHOT'
+main: org.lucas.furiousmina.FuriousMina
+description: Plugin de mina para a Rede Furious
+depend: [ Vault ]
+commands:
+  rlmina:
+    description: Recarregar o arquivo do yml da mina
+    permission-message: "§cVocê não tem permissão para usar o comando '/rlmina'."
+    aliases: [ rlmina, rlm, reloadmina ]
+  vender:
+    description: Vender os drops da mina
+    permission-message: "§cVocê não tem permissão para usar o comando '/vender'."
+    aliases: [ vender, sell ]
+

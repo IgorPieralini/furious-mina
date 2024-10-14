@@ -1,0 +1,68 @@
+#   FuriousMina
+#   Plugin para mina da rede Furious
+#   Feito por: Lucas Parisi
+#
+#
+# O plugin funciona da seguinte forma, o player entra no servidor mina, recebe sua picareta, seus encantamentos de acordo com a quantidade de blocos quebrados
+# recebe Visão nortuna, haste, invisibilidade, todos efeitos naturais, sem partículas.
+# Se o bloco for DIORITE, STONE, ANDESITE ou GRANITE o player tem chances de receber os minérios
+# Venda de minérios com o /vender
+#
+#
+# Chance de drop de cada minério
+minerios:
+  - "IRON_INGOT": 10
+  - "DIAMOND": 4
+  - "REDSTONE": 10
+  - "GOLD_INGOT": 7
+  - "EMERALD": 2
+  - "COAL": 12
+  - "LAPIS_LAZULI": 7
+
+#Preço que cada minério vai ter no comando /vender
+precoMinerios:
+  - "IRON_INGOT": 1
+  - "DIAMOND": 1
+  - "REDSTONE": 1
+  - "GOLD_INGOT": 1
+  - "EMERALD": 1
+  - "COAL": 1
+  - "LAPIS_LAZULI": 1
+
+# Sistema de fortunas para a picareta
+# Esquerda = Level de fortuna
+# Direita = Quantidades de blocos necessários para adquirir essa fortuna
+fortunas:
+  - 2: 1000
+  - 3: 2000
+  - 4: 3000
+  - 5: 5000
+
+# Mensagens importantes no plugin
+# Upar fortuna: quando um player atinge o nível necessário para upar a picareta, aparece essa mensagem
+# UpgradeFortunaMaximo: label da scoreboard para quando a fortuna atingir o nível máximo ( importante lembrar dos 16 caracteres da scoreboard )
+# Venda minerios: Mensagem para quando você vende com o /vender - $valor = variável de valor
+# semMineriosParaVender: Mensagem para quando o player não tem itens para vender
+# mensagemDelay: Mensagem para quando o player está no delay do comando /vender
+mensagens:
+  - uparFortuna: "Parabéns você upou sua picareta!"
+  - upgradeFortunaMaximo: "&eMAX"
+  - vendaMinerios: "&6Você vendeu seu inventário por $valor"
+  - semMineriosParaVender: "&4Voce não tem minérios para vender!"
+  - mensagemDelay: "&4Aguarde para executar esse comando novamente!"
+
+scoreboard:
+  - tittle: "&6&l MINA"
+  - coins: "&2 Coins: &b $coins"
+  - blocos: "&4&l$blocosQuebrados &0/ &6&l$proximaMeta"
+  - playersOnline: "&4Players na mina: &2 $playersOnline"
+  - site: "&4&lloja.redefurious.com"
+
+# Delay em segundos para executar novamente o comando /vender
+delay: 5
+
+# Camada que começa a dropar diamantes
+camadaDiamante: 15
+
+# Se a esmeralda vai dropar apenas na forest hills
+esmeraldaSomenteNoForestHills: true

@@ -1,0 +1,9 @@
+# Configuração do banco de dados que você vai usar, por padrão é o MySQL
+# No banco de dados vai ser armazenado as informações de cada shopSign que for criado
+# Seja item, localização, a ou até própria placa
+
+user: "root"
+password: ""
+host: "localhost"
+port: 3306
+database: "testando"
